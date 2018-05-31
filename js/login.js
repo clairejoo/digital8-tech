@@ -15,6 +15,7 @@ $('#loginForm').submit(function(event){
             window.sessionStorage.setItem('userToken', res.data.token);
             
             // go to main page
+            window.location.href='main.html';
         },
         error: function(){
             console.log('error');
