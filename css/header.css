@@ -1,0 +1,16 @@
+.header-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.logo-img {
+    width: 100px;
+    margin-top: -40px;
+    margin-left: 20px;
+}
+
+.logo-text {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 80px;
+    color: hotpink;
+}
