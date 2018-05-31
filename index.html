@@ -11,17 +11,19 @@
 
         <div class="row justify-content-center">
             <div class="card text-center" style="width: 20rem;">
-                <div class="card-body">
+                <form id="loginForm" class="card-body">
                     <label for="text-email"><b>Email</b></label>
-                    <input id="text-email" class="input-field" type="text" placeholder="email">
+                    <input id="text-email" name="email" class="input-field" type="text" placeholder="email">
                     <label class="login-element-spacing" for="text-password"><b>Password</b></label>
-                    <input id="text-password" class="input-field" type="password" placeholder="password">
+                    <input id="text-password" name="password" class="input-field" type="password" placeholder="password">
                     <input id="login-button" class="btn login-button" type="submit" value="Login">
-                </div>
+                </form>
             </div>
         </div>
 
         <script src="https://www.w3schools.com/lib/w3.js"></script>
         <script>w3.includeHTML();</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="/js/login.js"></script>
     </body>
 </html>
