@@ -17,9 +17,10 @@
 }
 
 .bundle-text {
-    font-family: 'Jua', sans-serif;
+    font-family: 'Patrick Hand SC', cursive;
     color: hotpink;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .bundle-price {
@@ -28,11 +29,12 @@
 
 .category-subtitle {
     margin-top: 50px;
-    font-family: 'Jua', sans-serif;
-    text-decoration: underline;
+    font-family: 'Patrick Hand SC', cursive;
+    text-transform: uppercase;
+    color: hotpink;
 }
 
 .product-item {
     margin-bottom: 30px;
-    min-height: 400px;
+    min-height: 450px;
 }

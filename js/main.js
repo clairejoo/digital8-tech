@@ -12,6 +12,7 @@ $(function() {
            var i;
            for (i=0; i < categories.length; i++) {
                var category = categories[i];
+               // create category list
                $('#categoriesContainer').append('<a href="#" class="list-group-item list-group-item-action category-name">' + category.name + '</a>');
            }
        },
@@ -19,14 +20,40 @@ $(function() {
            // when API failed, go to login page
            window.location.href='index.html';
        }
-   }); 
+   });
     
     // bundles carousel slides
     for (i=1; i < 4; i++) {
         callGetOneBundleApi(i);
     }
     
-    
+    // list all products
+    $.ajax({
+        url: 'http://54.79.111.71:1337/api/products',
+        headers: {
+            'x-token':userToken
+        },
+        method: 'GET',
+        success: function(res){
+            var products = res.data;
+            var i;
+            for (i=0; i < products.length; i++) {
+                var product = products[i];
+                $('#' + product.category.name + 'Row').append(
+                    '<div class="col-md-4">' +   
+                        '<div class="card product-item">' +
+                            '<img class="card-img-top" src="' + product.image + '" alt="' + product.name + '">' +
+                            '<div class="card-body">' + 
+                                '<h7 class="card-title">' + product.name + '</h7>' +
+                            '</div>' +
+                            '<div class="card-footer">' +
+                                '<span>$' + product.price + '</span>' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>');
+            }
+        }
+    });
 })
 
 function callGetOneBundleApi(i) {
