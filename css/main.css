@@ -3,10 +3,25 @@
     border-color: hotpink !important;
 }
 
+.category-name {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 20px;
+}
+
 .left-control {
     background-image: url("/images/leftControl.png") !important;
 }
 
 .right-control {
     background-image: url("/images/rightControl.png") !important;
+}
+
+.bundle-text {
+    font-family: 'Jua', sans-serif;
+    color: hotpink;
+    font-size: 20px;
+}
+
+.bundle-price {
+    margin-left: 10px;
 }
