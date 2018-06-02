@@ -1,0 +1,12 @@
+.list-group-item.active {
+    background-color: hotpink !important;
+    border-color: hotpink !important;
+}
+
+.left-control {
+    background-image: url("/images/leftControl.png") !important;
+}
+
+.right-control {
+    background-image: url("/images/rightControl.png") !important;
+}
