@@ -8,9 +8,15 @@ $(function() {
        },
        method: 'GET',
        success: function(res){
-           console.log(res);
+           var categories = res.data;
+           var i;
+           for (i=0; i < categories.length; i++) {
+               var category = categories[i];
+               $('#categoriesContainer').append('<a href="#" class="list-group-item list-group-item-action">' + category.name + '</a>');
+           }
        },
        error: function(){
+           // when API failed, go to login page
            window.location.href='index.html';
        }
    }); 
