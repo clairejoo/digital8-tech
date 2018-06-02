@@ -25,3 +25,14 @@
 .bundle-price {
     margin-left: 10px;
 }
+
+.category-subtitle {
+    margin-top: 50px;
+    font-family: 'Jua', sans-serif;
+    text-decoration: underline;
+}
+
+.product-item {
+    margin-bottom: 30px;
+    min-height: 400px;
+}
