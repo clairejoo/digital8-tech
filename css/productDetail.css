@@ -1,0 +1,32 @@
+.product-name {
+    font-size: 30px;
+    font-family: 'Neucha', cursive;
+}
+
+.product-price {
+    font-size: 32px;
+    margin-top: 40px;
+    font-family: 'Neucha', cursive;
+}
+
+.updated-at {
+    font-size: 12px;
+    margin-top: 18px;
+}
+
+.product-description {
+    font-size: 18px;
+    font-family: 'Neucha', cursive;
+}
+
+.badge {
+    background-color: hotpink;
+    font-size: 23px !important;
+    font-family: 'Patrick Hand SC', cursive;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.badge-category {
+    background-color: #545354 !important;
+}
