@@ -41,7 +41,7 @@ $(function() {
                 var product = products[i];
                 $('#' + product.category.name + 'Row').append(
                     '<div class="col-md-4">' +   
-                        '<div class="card product-item">' +
+                        '<div class="card product-item" onclick="goToProductDetailPage(' + product.id + ')">' +
                             '<img class="card-img-top" src="' + product.image + '" alt="' + product.name + '">' +
                             '<div class="card-body">' + 
                                 '<h7 class="card-title">' + product.name + '</h7>' +
@@ -84,6 +84,28 @@ function callGetOneBundleApi(i) {
         }
     });
 }
+
+// go to product detail page
+function goToProductDetailPage(productId) {
+    // store selected product id
+    window.sessionStorage.setItem('selectedProductId', productId);
+    // go to product detail page
+    window.location.href='productDetail.html';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // scroll top btn
 window.onscroll = function() {
