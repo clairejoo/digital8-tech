@@ -75,7 +75,7 @@ function callGetOneBundleApi(i) {
             }
             $('#bundlesCarousel').append(
                 '<div class="carousel-item' + activeString + '">' +
-                    '<img class="d-block w-100" src="/images/bundle' + i + '.png" alt="slide' + i + '">' +
+                    '<img class="d-block w-100" src="/images/bundle' + i + '.jpeg" alt="slide' + i + '">' +
                     '<div class="carousel-caption d-none d-md-block">' +
                         '<span class="bundle-text">' + bundle.name + '</span>' +
                         '<span class="bundle-text bundle-price">$' + bundle.basePrice + '</span>' +

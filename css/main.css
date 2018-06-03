@@ -38,6 +38,9 @@
     margin-bottom: 30px;
     min-height: 450px;
     cursor: pointer;
+    font-family: 'Neucha', cursive;
+    font-weight: 800;
+    font-size: 20px;
 }
 
 /* scroll to top button */
