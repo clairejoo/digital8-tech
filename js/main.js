@@ -13,7 +13,7 @@ $(function() {
            for (i=0; i < categories.length; i++) {
                var category = categories[i];
                // create category list
-               $('#categoriesContainer').append('<a href="#" class="list-group-item list-group-item-action category-name">' + category.name + '</a>');
+               $('#categoriesContainer').append('<a href="#' + category.name + '" class="list-group-item list-group-item-action category-name">' + category.name + '</a>');
            }
        },
        error: function(){
@@ -83,4 +83,22 @@ function callGetOneBundleApi(i) {
                 '</div>');
         }
     });
+}
+
+// scroll top btn
+window.onscroll = function() {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollTopBtn").style.display = "block";
+    } else {
+        document.getElementById("scrollTopBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
