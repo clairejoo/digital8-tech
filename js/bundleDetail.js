@@ -43,3 +43,11 @@ $(function() {
        }
     })
 });
+
+// go to product detail page
+function goToProductDetailPage(productId) {
+    // store selected product id
+    window.sessionStorage.setItem('selectedProductId', productId);
+    // go to product detail page
+    window.location.href='productDetail.html';
+}
