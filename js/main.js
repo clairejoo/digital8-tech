@@ -59,19 +59,13 @@ function goToProductDetailPage(productId) {
     window.location.href='productDetail.html';
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// go to bundle detail page
+function goToBundleDetailPage(bundleId) {
+    // store selected bundle id
+    window.sessionStorage.setItem('selectedBundleId', bundleId);
+    // go to bundle detail page
+    window.location.href='bundleDetail.html';
+}
 
 // scroll top btn
 window.onscroll = function() {

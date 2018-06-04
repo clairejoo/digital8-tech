@@ -16,15 +16,15 @@
     background-image: url("/images/rightControl.png") !important;
 }
 
+.carousel-item {
+    cursor: pointer;
+}
+
 .bundle-text {
     font-family: 'Patrick Hand SC', cursive;
     color: hotpink;
     font-size: 30px;
     font-weight: bold;
-}
-
-.bundle-price {
-    margin-left: 10px;
 }
 
 .category-subtitle {
