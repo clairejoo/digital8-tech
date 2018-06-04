@@ -1,3 +1,7 @@
+$(function() {
+    $('#alert-failure').hide();
+})
+
 $('#loginForm').submit(function(event){
     event.preventDefault();
     
@@ -18,8 +22,7 @@ $('#loginForm').submit(function(event){
             window.location.href='main.html';
         },
         error: function(){
-            console.log('error');
+            $('#alert-failure').show();
         }
     });
 });
-
